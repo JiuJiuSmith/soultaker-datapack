@@ -20,6 +20,11 @@
 
 > [Soul Taker Advancement](https://github.com/AzideCupric/soultaker-advancement)
 
+## ToDo
+
+- [ ] 添加新角色: Ninja
+- [ ] 添加新地图: 诡茂蓝泽
+
 ## 鸣谢
 
 WIP
