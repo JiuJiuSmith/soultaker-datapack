@@ -20,6 +20,7 @@ execute as @a[tag=ingame,scores={shift_time=1..}] if score @s soul matches 60.. 
 execute as @a[tag=ingame,tag=collect_soul] at @s run function pvp:game/lost_soul/judge
 execute as @a[tag=ingame,tag=!max_soul] if score @s soul matches 100.. run tellraw @s {"text": "[游戏] 灵魂容器已经满了","color": "yellow"}
 execute as @a[tag=ingame,tag=!max_soul] if score @s soul matches 100.. run tag @s add max_soul
+execute as @a[tag=ingame,tag=max_soul] unless score @s soul matches 100 run tag @s remove max_soul
 scoreboard players set @a[tag=ingame,scores={soul=101..}] soul 100
 
 scoreboard players remove @e[tag=lost_soul,tag=point,scores={soul_cd=1..}] soul_cd 1
@@ -42,7 +43,7 @@ function pvp:game/death/spawn
 #箭矢补充
 function pvp:game/replenish/loop
 
-#角色技能互动
+#角色技能
 function pvp:game/role/loop
 
 #实体设定(Q键防误触/箭矢防捡/离开显示)

@@ -1,7 +1,11 @@
 #by JiuJiu
 
 #法师
-scoreboard players add @a[scores={charge=1..39}] charge 1
+scoreboard players add @a[tag=charge,scores={charge=0..39}] charge 1
+scoreboard players set @a[tag=charge] fire 0
+scoreboard players add @a[scores={fire=..1}] fire 1
+execute as @a at @s if score @s fire matches 2 run function pvp:game/role/wizard/staff
+tag @a[tag=charge] remove charge
 
 playsound minecraft:block.fire.ambient player @a[scores={charge=2}] ~ ~100 ~ 100 0
 playsound minecraft:block.fire.ambient player @a[scores={charge=20}] ~ ~100 ~ 100 1
