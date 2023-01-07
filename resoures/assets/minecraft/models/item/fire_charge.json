@@ -1,0 +1,9 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/fire_charge"
+    },
+	"overrides" :[
+		{"predicate":{"custom_model_data":101},"model":"item/fireball"}
+	]
+}

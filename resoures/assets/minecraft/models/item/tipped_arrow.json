@@ -1,0 +1,11 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/tipped_arrow"
+    },
+    "overrides" :[
+		{"predicate":{"custom_model_data":1},"model":"item/bottle_damage"},
+		{"predicate":{"custom_model_data":2},"model":"item/bottle_blind"},
+		{"predicate":{"custom_model_data":3},"model":"item/bottle_weak"}
+    ]	
+}

@@ -12,7 +12,7 @@ clear @s[tag=replenish] minecraft:tipped_arrow{Potion:"minecraft:harming"}
 clear @s[tag=replenish] minecraft:tipped_arrow{Potion:"minecraft:slowness"}
 clear @s[tag=replenish] minecraft:tipped_arrow{Potion:"minecraft:weakness"}
 give @s[tag=replenish] minecraft:tipped_arrow{Potion:"minecraft:harming"} 12
-give @s[tag=replenish] minecraft:tipped_arrow{CustomPotionEffects:[{Id:15,Amplifier:0,Duration:600}],Potion:"minecraft:slowness"} 12
+give @s[tag=replenish] minecraft:tipped_arrow{Potion:"minecraft:slowness"} 12
 give @s[tag=replenish] minecraft:tipped_arrow{Potion:"minecraft:weakness"} 12
 
 tellraw @s[tag=replenish] {"text":"[游戏] 补充了箭矢","color":"yellow"}
