@@ -1,14 +1,13 @@
 name: Upload Release Asset
 
 on:
-  release:
-    types:
-      - created
-      - edited
-      - prereleased
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   spawn-datapack:
+    name: Build!
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,6 +15,16 @@ jobs:
         run: zip -r soultaker-datapack.zip data pack.mcmeta
       - name: Package Resourcepack!
         run: zip -r soultaker-resource.zip resources
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release $ {{ github.ref }}
+          draft: false
+          prerelease: true
       - name: Upload them!
         id: upload-release-asset
         uses: actions/upload-release-assert@v1
