@@ -32,10 +32,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          assert_path: |
+          asser_path: |
             ./soultaker-datapack.zip
             ./soultaker-resource.zip
-          assert_name: |
+          asset_name: |
             soultaker-datapack.zip
             soultaker-resource.zip
-          assert_content_type: application/zip
+          asset_content_type: application/zip
