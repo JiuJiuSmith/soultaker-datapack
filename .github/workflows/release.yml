@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asser_path: |
+          asset_path: |
             ./soultaker-datapack.zip
             ./soultaker-resource.zip
           asset_name: |
