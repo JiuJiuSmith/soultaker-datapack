@@ -14,7 +14,7 @@ jobs:
       - name: Package Datapack!
         run: zip -r soultaker-datapack.zip data pack.mcmeta
       - name: Package Resourcepack!
-        run: zip -r soultaker-resource.zip resources
+        run: zip -r soultaker-resource.zip resources & ls -al
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
