@@ -9,6 +9,9 @@ on:
 
 jobs:
   checker-is-running:
+    strategy:
+      matrix:
+        minecraftes: ["1.17", "1.18", "1.19"]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,5 +19,6 @@ jobs:
         uses: mcbeet/check-commands@v1
         with:
           source: .
+          minecraft: ${{matrix.minecraftes}}
       - name: Done!
         run: echo 'Done!'
