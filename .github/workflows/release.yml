@@ -12,11 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Package Datapack!
-        run: zip -r soultaker-datapack.zip data pack.mcmeta
+        run: ls -al && zip -r soultaker-datapack.zip data pack.mcmeta
       - name: Package Resourcepack!
-        run: zip -r soultaker-resource.zip resources
+        run: cd ./resources && zip -r ../soultaker-resource.zip ./* && cd ..
       - name: Package all!
-        run: zip soultaker-datapack-with-resources.zip *.zip & ls -al
+        run: ls -al && zip soultaker-datapack-with-resources.zip *.zip
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
