@@ -25,5 +25,3 @@ execute if score #rotation operation matches 340..359 run summon minecraft:armor
 execute if score @s charge matches 1..19 run scoreboard players set @e[tag=summon] charge 1
 execute if score @s charge matches 20..39 run scoreboard players set @e[tag=summon] charge 2
 execute if score @s charge matches 40 run scoreboard players set @e[tag=summon] charge 3
-
-scoreboard players set @s charge 41

@@ -11,9 +11,10 @@
       "announce_to_chat": true,
       "hidden": false
     },
+    "parent": "azide:root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
-            }
+      }
     }
 }

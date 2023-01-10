@@ -1,9 +1,7 @@
 #by JiuJiu
 
 #法师-法杖
-execute as @s[scores={charge=1}] if score @s life matches ..19 run tp @s ^ ^ ^1.5
-execute as @s[scores={charge=2}] if score @s life matches ..26 run tp @s ^ ^ ^1.5
-execute as @s[scores={charge=3}] if score @s life matches ..39 run tp @s ^ ^ ^1.5
+tp @s ^ ^ ^1.5
 
 tag @s add move
 

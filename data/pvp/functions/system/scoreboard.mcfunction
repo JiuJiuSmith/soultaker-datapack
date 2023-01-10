@@ -11,8 +11,13 @@ scoreboard objectives add gamemode dummy
 #运算
 scoreboard objectives add operation dummy
 scoreboard players set #2 operation 2
+scoreboard players set #3 operation 3
+scoreboard players set #5 operation 5
+scoreboard players set #6 operation 6
+scoreboard players set #10 operation 10
 scoreboard players set #20 operation 20
 scoreboard players set #60 operation 60
+scoreboard players set #100 operation 100
 scoreboard players set #160 operation 160
 scoreboard players set #360 operation 360
 
@@ -82,11 +87,18 @@ scoreboard objectives add bow minecraft.used:minecraft.bow
 scoreboard objectives add crossbow minecraft.used:minecraft.crossbow
 
 #角色技能互动
+##通用
 scoreboard objectives add life dummy
 scoreboard objectives add cd dummy
+##法师
 scoreboard objectives add charge dummy
+scoreboard objectives add fire dummy
+##牧师
 scoreboard objectives add cure dummy
 scoreboard objectives add wither dummy
+##武士
+scoreboard objectives add katana dummy
+scoreboard objectives add soul_escapes_s dummy
 
 #游戏规则
 gamerule naturalRegeneration false

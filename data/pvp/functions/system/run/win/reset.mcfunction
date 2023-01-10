@@ -3,6 +3,7 @@
 tp @e[tag=ingame] @e[tag=hall,limit=1]
 
 clear @a[tag=ingame]
+execute as @a[tag=ingame] run function pvp:book/give
 execute as @e[tag=hall] at @s run spawnpoint @a[tag=ingame] ~ ~ ~
 effect clear @a[tag=ingame]
 effect give @a[tag=ingame] saturation 99999 0 true
@@ -53,9 +54,11 @@ scoreboard objectives remove arrow_id
 scoreboard objectives remove life
 scoreboard objectives remove cd
 scoreboard objectives remove charge
+scoreboard objectives remove fire
 scoreboard objectives remove cure
 scoreboard objectives remove wither
-
+scoreboard objectives remove katana
+scoreboard objectives remove unhurt
 #标签和进度
 tag @a remove notfirst
 tag @a remove max_soul

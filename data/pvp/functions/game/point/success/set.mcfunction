@@ -9,4 +9,3 @@ scoreboard players set @s shift_time 0
 function pvp:game/point/success/soul
 
 tag @s remove shift
-tag @s remove max_soul
