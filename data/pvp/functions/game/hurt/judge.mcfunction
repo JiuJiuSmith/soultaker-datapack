@@ -12,11 +12,11 @@ title @a[scores={damage=1..}] subtitle [{"text": "🗡","color": "red"},{"score"
 title @a[scores={damage=1..}] title {"text": ""}
 
 ##狂战士技能
-scoreboard players operation @s hurt /= #2 operation
-execute at @s as @p[scores={damage=1..},tag=violent,distance=0.1..] run scoreboard players operation @s hp += @p[scores={hurt=1..}] hurt
+execute at @s as @p[scores={damage=1..},tag=violent,distance=0.1..] run function pvp:game/role/axe/hemato
 
 ##武士技能
 execute as @a[scores={damage=1..}] if score @s katana matches 2 at @s run function pvp:game/role/katana/judge_swordkee
+execute as @a[scores={damage=1..}] if score @s katana matches 2 at @s run function pvp:game/role/katana/soul_cling
 
 ##重置
 scoreboard players set @s hurt 0

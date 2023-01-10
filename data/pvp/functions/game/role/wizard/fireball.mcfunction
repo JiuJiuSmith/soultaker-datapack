@@ -1,6 +1,6 @@
 #by JiuJiu
 
-#法师-法杖
+#火球移动和命中判定
 tp @s ^ ^ ^1.5
 
 tag @s add move
