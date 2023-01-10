@@ -1,9 +1,9 @@
-name: Upload Release Asset
+name: Upload Dev Asset
 
 on:
   push:
     tags:
-      - 'v*'
+      - 'dev*'
 
 jobs:
   spawn-datapack:
@@ -25,8 +25,8 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: true
+          draft: true
+          prerelease: false
       - name: Position
         run: ls -al
       - name: Upload them!
