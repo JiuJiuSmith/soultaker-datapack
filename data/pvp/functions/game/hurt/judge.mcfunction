@@ -5,11 +5,6 @@
 ##来源
 execute as @a[scores={damage=1..}] at @s run function pvp:game/atk/judge
 
-##武士技能
-execute if score @s unhurt matches 1.. if score @s katana matches 2 at @s run function pvp:game/role/ninja/draw_attack/unhurt
-execute if score @s defend matches 1..10 if score @s katana matches 3 at @s run function pvp:game/role/ninja/defend/unhurt
-execute if score @s defend matches 11 if score @s katana matches 3 at @s run function pvp:game/role/ninja/defend/lowhurt
-
 ##伤害
 scoreboard players operation @s hp -= @s hurt
 title @a[scores={damage=1..}] times 0 5 5
@@ -19,6 +14,9 @@ title @a[scores={damage=1..}] title {"text": ""}
 ##狂战士技能
 scoreboard players operation @s hurt /= #2 operation
 execute at @s as @p[scores={damage=1..},tag=violent,distance=0.1..] run scoreboard players operation @s hp += @p[scores={hurt=1..}] hurt
+
+##武士技能
+execute as @a[scores={damage=1..}] if score @s katana matches 2 at @s run function pvp:
 
 ##重置
 scoreboard players set @s hurt 0
