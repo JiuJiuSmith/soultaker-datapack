@@ -1,0 +1,10 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/iron_axe"
+    },
+	"overrides" :[
+		{"predicate":{"custom_model_data":13},"model":"item/axe_off"},
+		{"predicate":{"custom_model_data":14},"model":"item/axe_on"}
+	]
+}

@@ -1,0 +1,20 @@
+name: Minecraft Commands checker
+
+on:
+  pull_request:
+    paths:
+      - data/**
+      - .github/**
+      - pack.mcmeta
+
+jobs:
+  checker-is-running:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: checking
+        uses: mcbeet/check-commands@v1
+        with:
+          source: .
+      - name: Done!
+        run: echo 'Done!'

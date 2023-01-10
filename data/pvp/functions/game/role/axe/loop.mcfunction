@@ -8,6 +8,6 @@ tag @s add me
 execute at @s[tag=violent] run particle minecraft:dust 0.545 0.004 0.004 1 ~ ~1 ~ 0 0.3 0 0.02 10 normal @a[tag=!me]
 tag @s remove me
 
-execute as @s[tag=violent,scores={soul=3..}] if score @s cd matches 0 run scoreboard players remove @s soul 3
+execute as @s[tag=violent,scores={soul=1..}] if score @s cd matches 0 run scoreboard players remove @s soul 1
 scoreboard players set @s[tag=violent,scores={cd=0}] cd 20
-execute as @s[tag=violent,scores={soul=..2}] run function pvp:game/role/axe/end
+execute as @s[tag=violent,scores={soul=0}] run function pvp:game/role/axe/end

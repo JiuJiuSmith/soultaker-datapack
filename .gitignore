@@ -1,2 +1,7 @@
 .datapack
+<<<<<<< HEAD
 /temp
+=======
+temp
+*.zip
+>>>>>>> origin

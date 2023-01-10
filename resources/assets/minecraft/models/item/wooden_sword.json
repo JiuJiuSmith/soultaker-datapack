@@ -1,0 +1,9 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/wooden_sword"
+    },
+	"overrides" :[
+		{"predicate":{"custom_model_data":8},"model":"item/iron_dagger"}
+	]
+}

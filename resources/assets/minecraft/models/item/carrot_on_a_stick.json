@@ -1,0 +1,33 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/carrot_on_a_stick"
+    },
+	"overrides" :[
+		{"predicate":{"custom_model_data":1},"model":"item/pack_sword"},
+		{"predicate":{"custom_model_data":2},"model":"item/pack_axe"},
+		{"predicate":{"custom_model_data":3},"model":"item/pack_bow"},
+		{"predicate":{"custom_model_data":4},"model":"item/pack_crossbow"},
+		{"predicate":{"custom_model_data":5},"model":"item/pack_wizard"},
+		{"predicate":{"custom_model_data":6},"model":"item/pack_priest"},
+		{"predicate":{"custom_model_data":11},"model":"item/staff"},
+		{"predicate":{"custom_model_data":12},"model":"item/book"},
+		{"predicate":{"custom_model_data":15},"model":"item/katana_sheath"},
+
+		{"predicate":{"custom_model_data":21},"model":"item/soul_cage"},
+
+		{"predicate":{"custom_model_data":101},"model":"item/set_point"},
+		{"predicate":{"custom_model_data":102},"model":"item/reset_point"},
+		{"predicate":{"custom_model_data":103},"model":"item/point_highlight"},
+		{"predicate":{"custom_model_data":104},"model":"item/command_hall"},
+		{"predicate":{"custom_model_data":105},"model":"item/red_spawn_point"},
+		{"predicate":{"custom_model_data":106},"model":"item/blue_spawn_point"},
+		{"predicate":{"custom_model_data":107},"model":"item/red_waiting_point"},
+		{"predicate":{"custom_model_data":108},"model":"item/blue_waiting_point"},
+		{"predicate":{"custom_model_data":109},"model":"item/next"},
+		{"predicate":{"custom_model_data":110},"model":"item/mid_point"},
+		{"predicate":{"custom_model_data":111},"model":"item/lost_soul_point"},
+		
+		{"predicate":{"custom_model_data":404},"model":"item/emerald_hoe"}
+	]
+}

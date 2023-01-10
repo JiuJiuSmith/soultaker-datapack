@@ -107,4 +107,3 @@ gamerule commandBlockOutput false
 gamerule showDeathMessages false
 gamerule doMobSpawning false
 gamerule randomTickSpeed 0
-gamerule doImmediateRespawn true
