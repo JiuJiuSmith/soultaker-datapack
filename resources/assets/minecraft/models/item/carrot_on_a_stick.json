@@ -13,6 +13,7 @@
 		{"predicate":{"custom_model_data":11},"model":"item/staff"},
 		{"predicate":{"custom_model_data":12},"model":"item/book"},
 		{"predicate":{"custom_model_data":15},"model":"item/katana_sheath"},
+		{"predicate":{"custom_model_data":16},"model":"item/katana"},
 
 		{"predicate":{"custom_model_data":21},"model":"item/soul_cage"},
 

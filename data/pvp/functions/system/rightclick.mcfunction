@@ -3,9 +3,8 @@
 ##角色道具
 execute if entity @s[nbt={SelectedItem:{tag:{rid:5}}},scores={cd=0}] at @s run tag @s add charge
 execute if entity @s[nbt={SelectedItem:{tag:{rid:6}}},scores={cd=0}] at @s run function pvp:game/role/priests/book
-execute if entity @s[nbt={SelectedItem:{tag:{katana:1}}},scores={cd=0}] at @s run function pvp:game/role/ninja/draw_attack/set
-execute if entity @s[nbt={SelectedItem:{tag:{katana:2}}},scores={cd=0}] at @s run function pvp:game/role/ninja/defend/set
-execute if entity @s[nbt={SelectedItem:{tag:{katana:3}}},scores={cd=0}] at @s run tag @s add defend
+execute if entity @s[nbt={SelectedItem:{tag:{katana:1}}}] at @s run function pvp:game/role/katana/out_sheath
+execute if entity @s[nbt={SelectedItem:{tag:{katana:2}}},scores={cd=0}] at @s run function pvp:game/role/katana/in_sheath
 
 ##收集遗落的灵魂
 execute if entity @s[nbt={SelectedItem:{tag:{cage:1}}}] if entity @e[tag=point,tag=lost_soul,scores={soul_cd=0},distance=..3] run tellraw @s[tag=ingame,tag=!collect_soul,tag=!max_soul] {"text": "[游戏] 开始回收灵魂，请保持在附近","color": "yellow"}
@@ -61,7 +60,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{role:3}}}] run function pvp:game/ch
 execute if entity @s[nbt={SelectedItem:{tag:{role:4}}}] run function pvp:game/choose/crossbow
 execute if entity @s[nbt={SelectedItem:{tag:{role:5}}}] run function pvp:game/choose/wizard
 execute if entity @s[nbt={SelectedItem:{tag:{role:6}}}] run function pvp:game/choose/priest
-execute if entity @s[nbt={SelectedItem:{tag:{role:8}}}] run function pvp:game/choose/ninja
+execute if entity @s[nbt={SelectedItem:{tag:{role:8}}}] run function pvp:game/choose/katana
 
 ##重置计分板
 scoreboard players set @s rightclick 0

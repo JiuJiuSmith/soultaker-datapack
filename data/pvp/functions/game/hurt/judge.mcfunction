@@ -5,7 +5,7 @@
 ##来源
 execute as @a[scores={damage=1..}] at @s run function pvp:game/atk/judge
 
-##忍者技能
+##武士技能
 execute if score @s unhurt matches 1.. if score @s katana matches 2 at @s run function pvp:game/role/ninja/draw_attack/unhurt
 execute if score @s defend matches 1..10 if score @s katana matches 3 at @s run function pvp:game/role/ninja/defend/unhurt
 execute if score @s defend matches 11 if score @s katana matches 3 at @s run function pvp:game/role/ninja/defend/lowhurt
