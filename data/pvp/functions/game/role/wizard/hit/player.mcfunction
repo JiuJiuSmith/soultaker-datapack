@@ -19,4 +19,4 @@ execute if score @e[tag=move,limit=1] charge matches 2..3 as @a[distance=..1.5] 
 
 tag @s remove me
 
-scoreboard players set @e[tag=move] life 0
+kill @e[tag=move]

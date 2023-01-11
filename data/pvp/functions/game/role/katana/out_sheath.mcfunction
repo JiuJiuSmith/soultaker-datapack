@@ -1,7 +1,7 @@
 #by JiuJiu
 
 ##武士-拔刀斩
-scoreboard players set @s cd 400
+scoreboard players set @s cd 100
 scoreboard players set @s katana 2
 
 item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:16,katana:2,display:{Name:'[{"text":"太刀","color":"white","italic": false}]'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Operation:0,Amount:6,Slot:"mainhand",Name:"Armor",UUID:[I;17,18,19,20]},{AttributeName:"generic.attack_speed",Operation:0,Amount:-2,Slot:"mainhand",Name:"Armor",UUID:[I;21,22,23,24]}]}

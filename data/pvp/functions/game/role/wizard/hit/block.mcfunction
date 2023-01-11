@@ -10,4 +10,4 @@ execute if score @s charge matches 3 as @a[distance=..1.5] unless score @s tid =
 execute if score @s charge matches 2..3 as @a[distance=..1.5] unless score @s tid = @e[tag=move,limit=1] tid unless score @s killer = @e[tag=move,limit=1] pid run scoreboard players operation @s helper = @s killer
 execute if score @s charge matches 2..3 as @a[distance=..1.5] unless score @s tid = @e[tag=move,limit=1] tid run scoreboard players operation @s killer = @e[tag=move] pid
 
-scoreboard players set @e[tag=move] life 0
+kill @e[tag=move]

@@ -6,3 +6,5 @@ execute as @e[tag=random] store result score @s random run data get entity @s UU
 scoreboard players operation @e[tag=random] random %= #max random
 
 execute if score @e[tag=random,limit=1] random <= @s soul run function pvp:game/role/katana/swordkee
+
+kill @e[tag=summon]

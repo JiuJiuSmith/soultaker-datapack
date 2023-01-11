@@ -4,6 +4,9 @@
 # *me:被命中的玩家
 tag @s add me
 
+effect give @s slowness 2 0 false
+execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=me] tid run function pvp:game/role/katana/hit/effect
+
 execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=me] tid run scoreboard players remove @s[tag=!me] hp 20
 execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=me] tid run scoreboard players operation @s[tag=me] hp -= @e[tag=move] swordkee_damage 
 
@@ -16,4 +19,4 @@ execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=m
 
 tag @s remove me
 
-scoreboard players set @e[tag=move] life 0
+kill @e[tag=move]
