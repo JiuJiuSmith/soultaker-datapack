@@ -1,6 +1,6 @@
 #by JiuJiu
 
-#法师-法杖
+#法师-判定火球命中玩家
 tag @s add me
 
 execute if score @e[tag=move,limit=1] charge matches 1 run scoreboard players add @s hp 20
@@ -19,4 +19,4 @@ execute if score @e[tag=move,limit=1] charge matches 2..3 as @a[distance=..1.5] 
 
 tag @s remove me
 
-scoreboard players set @e[tag=move] life 0
+kill @e[tag=move]

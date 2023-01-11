@@ -3,7 +3,7 @@
 ##角色道具
 execute if entity @s[nbt={SelectedItem:{tag:{rid:5}}},scores={cd=0}] at @s run tag @s add charge
 execute if entity @s[nbt={SelectedItem:{tag:{rid:6}}},scores={cd=0}] at @s run function pvp:game/role/priests/book
-execute if entity @s[nbt={SelectedItem:{tag:{katana:1}}}] at @s run function pvp:game/role/katana/out_sheath
+execute if entity @s[nbt={SelectedItem:{tag:{katana:1}}},scores={cd=0}] at @s run function pvp:game/role/katana/out_sheath
 execute if entity @s[nbt={SelectedItem:{tag:{katana:2}}},scores={cd=0}] at @s run function pvp:game/role/katana/in_sheath
 
 ##收集遗落的灵魂

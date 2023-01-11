@@ -4,6 +4,7 @@ scoreboard players set @s rid 8
 scoreboard players set @s cd 0
 scoreboard players add R8武士 role_pick_times 1
 scoreboard players set @s katana 1
+scoreboard players set @s swordkee_damage 30
 
 clear @s
 

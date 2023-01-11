@@ -1,4 +1,4 @@
 .datapack
 temp
 *.zip
-.vs
+.vs/*
