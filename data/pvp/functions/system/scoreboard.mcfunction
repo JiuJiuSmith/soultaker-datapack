@@ -104,6 +104,7 @@ scoreboard objectives add wither dummy
 scoreboard objectives add katana dummy
 scoreboard objectives add soul_escapes_s dummy
 scoreboard objectives add soul_cling dummy
+scoreboard objectives add swordkee_damage dummy
 
 #游戏规则
 gamerule naturalRegeneration false

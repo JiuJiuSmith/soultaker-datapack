@@ -15,6 +15,7 @@ title @a[scores={damage=1..}] title {"text": ""}
 execute at @s as @p[scores={damage=1..},tag=violent,distance=0.1..] run function pvp:game/role/axe/hemato
 
 ##武士技能
+execute as @a[scores={damage=1..}] if score @s katana matches 2 at @s run scoreboard players operation @s swordkee_damage = @p[scores={hurt=1..}] hurt
 execute as @a[scores={damage=1..}] if score @s katana matches 2 at @s run function pvp:game/role/katana/judge_swordkee
 execute as @a[scores={damage=1..}] if score @s katana matches 2 at @s run function pvp:game/role/katana/soul_cling
 
