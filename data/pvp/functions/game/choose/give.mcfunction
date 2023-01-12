@@ -1,10 +1,11 @@
 #pvp
 #by JiuJiu
 
+#重置职业
 clear @s
 scoreboard players set @s rid 0
 
-##选择职业
+#给予选择职业的信物(右键选择检测物)
 item replace entity @s container.0 with carrot_on_a_stick{CustomModelData:1,role:1,display:{Name:'[{"text": "剑士","color": "gold","italic": false,"bold": true}]'}}
 item replace entity @s container.1 with carrot_on_a_stick{CustomModelData:2,role:2,display:{Name:'[{"text": "狂战士","color": "gold","italic": false,"bold": true}]'}}
 item replace entity @s container.2 with carrot_on_a_stick{CustomModelData:3,role:3,display:{Name:'[{"text": "游侠","color": "gold","italic": false,"bold": true}]'}}
