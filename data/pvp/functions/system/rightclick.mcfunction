@@ -12,6 +12,15 @@ execute if entity @s[nbt={SelectedItem:{tag:{cage:1}}}] if entity @e[tag=point,t
 execute if entity @s[nbt={SelectedItem:{tag:{cage:1}}}] unless entity @e[tag=point,tag=lost_soul,scores={soul_cd=0},distance=..3] run tellraw @s {"text": "[游戏] 周围没有搜寻到遗落的灵魂","color": "yellow"}
 execute if entity @s[nbt={SelectedItem:{tag:{cage:1}}}] if entity @e[tag=point,tag=lost_soul,scores={soul_cd=0},distance=..3] run tag @s[tag=ingame,tag=!collect_soul,tag=!max_soul] add collect_soul
 
+##选择职业
+execute if entity @s[nbt={SelectedItem:{tag:{role:1}}}] run function pvp:game/choose/sword
+execute if entity @s[nbt={SelectedItem:{tag:{role:2}}}] run function pvp:game/choose/axe
+execute if entity @s[nbt={SelectedItem:{tag:{role:3}}}] run function pvp:game/choose/bow
+execute if entity @s[nbt={SelectedItem:{tag:{role:4}}}] run function pvp:game/choose/crossbow
+execute if entity @s[nbt={SelectedItem:{tag:{role:5}}}] run function pvp:game/choose/wizard
+execute if entity @s[nbt={SelectedItem:{tag:{role:6}}}] run function pvp:game/choose/priest
+execute if entity @s[nbt={SelectedItem:{tag:{role:8}}}] run function pvp:game/choose/katana
+
 ##自定义设置工具
 execute if entity @s[nbt={SelectedItem:{tag:{point:1}}}] run function pvp:tools/point_set
 
@@ -52,15 +61,6 @@ tag @a remove list2
 
 execute as @e[tag=summon] run tp @s ^ ^ ^ ~ ~
 tag @e[tag=summon] remove summon
-
-##选择职业
-execute if entity @s[nbt={SelectedItem:{tag:{role:1}}}] run function pvp:game/choose/sword
-execute if entity @s[nbt={SelectedItem:{tag:{role:2}}}] run function pvp:game/choose/axe
-execute if entity @s[nbt={SelectedItem:{tag:{role:3}}}] run function pvp:game/choose/bow
-execute if entity @s[nbt={SelectedItem:{tag:{role:4}}}] run function pvp:game/choose/crossbow
-execute if entity @s[nbt={SelectedItem:{tag:{role:5}}}] run function pvp:game/choose/wizard
-execute if entity @s[nbt={SelectedItem:{tag:{role:6}}}] run function pvp:game/choose/priest
-execute if entity @s[nbt={SelectedItem:{tag:{role:8}}}] run function pvp:game/choose/katana
 
 ##重置计分板
 scoreboard players set @s rightclick 0

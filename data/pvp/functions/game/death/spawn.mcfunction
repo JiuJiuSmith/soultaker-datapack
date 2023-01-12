@@ -11,7 +11,7 @@ execute as @e[team=red,scores={spawn=0},type=player] run scoreboard players add 
 execute as @e[team=blue,scores={spawn=0},type=player] run tp @s @e[tag=blue_spawn,limit=1]
 execute as @e[team=blue,scores={spawn=0},type=player] run scoreboard players add #player blueplayer 1
 
-##重生倒计时提示
+##重生倒计时UI显示
 tellraw @a[scores={spawn=319}] {"text":"[游戏] 16秒后返回战场","color": "yellow"}
 title @a[scores={spawn=100}] times 0 20 0
 title @a[scores={spawn=100}] title {"text": "5","color": "yellow"}
