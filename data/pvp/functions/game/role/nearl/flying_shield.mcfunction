@@ -7,8 +7,10 @@ tag @s add move
 
 scoreboard players remove @s life 1
 
-execute if score @s tid matches 1 positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!guarded,dx=0,dy=0,dz=0,scores={tid=1,rid=1..8,rid=10..}] positioned ~ ~ ~ if entity @s[dx=0,dy=0,dz=0] at @s run function pvp:game/role/nearl/hit/teammate
-execute if score @s tid matches 2 positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!guarded,dx=0,dy=0,dz=0,scores={tid=2,rid=1..8,rid=10..}] positioned ~ ~ ~ if entity @s[dx=0,dy=0,dz=0] at @s run function pvp:game/role/nearl/hit/teammate
+execute if score @s tid matches 1 positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!guarded,dx=0,dy=0,dz=0,scores={tid=1,rid=1..8}] positioned ~ ~ ~ if entity @s[dx=0,dy=0,dz=0] at @s run function pvp:game/role/nearl/hit/teammate 
+execute if score @s tid matches 1 positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!guarded,dx=0,dy=0,dz=0,scores={tid=1,rid=10..}] positioned ~ ~ ~ if entity @s[dx=0,dy=0,dz=0] at @s run function pvp:game/role/nearl/hit/teammate
+execute if score @s tid matches 2 positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!guarded,dx=0,dy=0,dz=0,scores={tid=2,rid=1..8}] positioned ~ ~ ~ if entity @s[dx=0,dy=0,dz=0] at @s run function pvp:game/role/nearl/hit/teammate
+execute if score @s tid matches 2 positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!guarded,dx=0,dy=0,dz=0,scores={tid=2,rid=10..}] positioned ~ ~ ~ if entity @s[dx=0,dy=0,dz=0] at @s run function pvp:game/role/nearl/hit/teammate
 execute unless block ~ ~ ~ #pvp:transparent run function pvp:game/role/nearl/hit/block
 
 # 超时还盾

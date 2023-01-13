@@ -36,6 +36,7 @@ effect give @p[tag=killer,scores={rid=2}] haste 3 9
 
 ## 耀骑士死后杀死场上的大剑，重置手上的武器
 execute as @e[tag=nearl_sword] if score @s pid = @p[tag=death] pid run kill @s
+execute if score @s rid matches 9 run function pvp:game/role/nearl/callback
 execute if score @s rid matches 9 run function pvp:game/choose/nearl
 
 ##增加重生时间

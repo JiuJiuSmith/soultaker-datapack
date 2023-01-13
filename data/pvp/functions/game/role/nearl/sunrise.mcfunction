@@ -6,7 +6,7 @@
 scoreboard players set @s cd 40
 scoreboard players set @s blazing_sun 1
 # 替换手中的武器为 “光”  WIP!
-item replace entity @s weapon.mainhand with ender_eye{CustomModelData:3, blazing_sun: 1,display:{Name:'[{"text":"“光”", "color":"gold", "bold": true, "underlined": true, "italic": false}]'}}
+item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:3, blazing_sun: 1,display:{Name:'[{"text":"“光”", "color":"gold", "bold": true, "underlined": true, "italic": false}]'}}
 # 生成插在地上的剑
 function pvp:game/role/nearl/summon_sword
 # 无法移动和跳跃

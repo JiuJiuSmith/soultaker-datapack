@@ -62,6 +62,7 @@ scoreboard objectives remove unhurt
 #标签和进度
 tag @a remove notfirst
 tag @a remove max_soul
+tag @a remove guarded
 advancement revoke @a only pvp:first_blood
 
 #实体
