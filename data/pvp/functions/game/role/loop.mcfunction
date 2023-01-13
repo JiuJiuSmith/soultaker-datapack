@@ -19,3 +19,5 @@ execute as @a[tag=ingame] if score @s rid matches 2 run function pvp:game/role/a
 ##武士
 execute as @a[tag=ingame] if score @s rid matches 8 run function pvp:game/role/katana/loop
 
+## 耀骑士
+execute as @a[tag=ingame] if score @s rid matches 9 run function pvp:game/role/nearl/loop

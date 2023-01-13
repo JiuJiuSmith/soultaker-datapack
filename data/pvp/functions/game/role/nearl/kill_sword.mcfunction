@@ -2,4 +2,4 @@
 
 # 将创造的大剑杀掉
 
-execute as @e[tag=nearl_sowrd] if score @s pid = @p[tag=me] pid run kill @s
+execute as @e[tag=nearl_sword] if score @s pid = @p[tag=me] pid run kill @s
