@@ -8,3 +8,5 @@ execute as @a[tag=guarded] if score @s pid = @p[tag=me] guarded_pid run tag @s r
 scoreboard players set @s guarded_pid -1
 
 tag @s add guarded
+
+tag @s remove me

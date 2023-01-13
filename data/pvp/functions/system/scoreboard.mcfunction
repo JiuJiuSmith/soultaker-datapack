@@ -17,6 +17,7 @@ scoreboard players set #2 operation 2
 scoreboard players set #3 operation 3
 scoreboard players set #5 operation 5
 scoreboard players set #6 operation 6
+scoreboard players set #7 operation 7
 scoreboard players set #10 operation 10
 scoreboard players set #20 operation 20
 scoreboard players set #60 operation 60

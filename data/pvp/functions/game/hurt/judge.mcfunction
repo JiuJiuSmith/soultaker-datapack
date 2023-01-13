@@ -5,6 +5,9 @@
 ##来源检测
 execute as @a[scores={damage=1..}] at @s run function pvp:game/atk/judge
 
+## 耀骑士护盾减伤
+execute as @s[tag=grauded] run function pvp:game/role/nearl/hurt_reduce
+
 ##造成伤害并提示
 scoreboard players operation @s hp -= @s hurt
 title @a[scores={damage=1..}] times 0 5 5
