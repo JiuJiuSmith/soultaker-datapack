@@ -1,6 +1,6 @@
 #by JiuJiu
 
-#血量虚拟显示
+#实际生命值上限设置为对应的当前虚拟生命值
 execute as @a if score @s hp matches 0..10 run attribute @s minecraft:generic.max_health base set 1
 execute as @a if score @s hp matches 11..20 run attribute @s minecraft:generic.max_health base set 2
 execute as @a if score @s hp matches 21..30 run attribute @s minecraft:generic.max_health base set 3
