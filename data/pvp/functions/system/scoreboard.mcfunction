@@ -106,6 +106,10 @@ scoreboard objectives add katana dummy
 scoreboard objectives add soul_escapes_s dummy
 scoreboard objectives add soul_cling dummy
 scoreboard objectives add swordkee_damage dummy
+#耀骑士
+## 武器耀阳的状态 0: 手持 1: 插地
+scoreboard objectives add blazing_sun dummy
+scoreboard objectives add guarded_pid dummy
 
 ##游戏规则
 gamerule naturalRegeneration false

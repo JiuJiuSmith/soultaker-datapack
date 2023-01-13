@@ -13,3 +13,4 @@ item replace entity @s container.3 with carrot_on_a_stick{CustomModelData:4,role
 item replace entity @s container.4 with carrot_on_a_stick{CustomModelData:5,role:5,display:{Name:'[{"text": "法师","color": "gold","italic": false,"bold": true}]'}}
 item replace entity @s container.5 with carrot_on_a_stick{CustomModelData:6,role:6,display:{Name:'[{"text": "牧师","color": "gold","italic": false,"bold": true}]'}}
 item replace entity @s container.6 with carrot_on_a_stick{CustomModelData:15,role:8,display:{Name:'[{"text": "武士","color": "gold","italic": false,"bold": true}]'}}
+item replace entity @s container.7 with carrot_on_a_stick{CustomModelData:17,role:9,display:{Name:'[{"text": "耀骑士","color": "gold","italic": false,"bold": true}]'}}
