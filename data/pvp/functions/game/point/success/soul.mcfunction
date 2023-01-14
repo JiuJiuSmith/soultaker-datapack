@@ -15,4 +15,4 @@ tellraw @a [{"selector":"@s"},{"text":"释放了","bold":false},{"score":{"name"
 
 scoreboard players set #10 operation 10
 scoreboard players operation @s soul %= #10 operation
-tag @s[tag=guarded_plus] remove guarded_plus
+execute as @s[tag=guarded_plus] run function pvp:game/role/nearl/soul_release

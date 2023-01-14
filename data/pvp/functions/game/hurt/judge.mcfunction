@@ -6,7 +6,8 @@
 execute as @a[scores={damage=1..}] at @s run function pvp:game/atk/judge
 
 ## 耀骑士护盾减伤
-execute as @s[tag=grauded] run function pvp:game/role/nearl/hurt_reduce
+execute as @s[tag=guarded] run function pvp:game/role/nearl/hurt_reduce
+execute as @s[tag=guarded_plus] run function pvp:game/role/nearl/hurt_reduce_plus
 
 ##造成伤害并提示
 scoreboard players operation @s hp -= @s hurt
