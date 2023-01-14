@@ -59,6 +59,7 @@ scoreboard objectives remove cure
 scoreboard objectives remove wither
 scoreboard objectives remove katana
 scoreboard objectives remove unhurt
+
 #标签和进度
 tag @a remove notfirst
 tag @a remove max_soul
