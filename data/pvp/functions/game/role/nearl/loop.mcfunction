@@ -11,3 +11,6 @@ tag @a[tag=nearl_cure] add cure
 scoreboard players set @a[tag=nearl_cure] cure 20 
 
 tag @a[tag=nearl_cure] remove nearl_cure
+
+## 耀阳光阵粒子效果显示
+execute at @e[tag=nearl_sword_particle] run function pvp:game/role/nearl/sword_particle

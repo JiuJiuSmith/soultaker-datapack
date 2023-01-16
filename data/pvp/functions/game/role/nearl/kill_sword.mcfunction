@@ -2,4 +2,5 @@
 
 # 将创造的大剑杀掉
 
-execute as @e[tag=nearl_sword] if score @s pid = @p[tag=me] pid run kill @s
+kill @e[tag=nearl_sword_particle,distance=0]
+kill @s

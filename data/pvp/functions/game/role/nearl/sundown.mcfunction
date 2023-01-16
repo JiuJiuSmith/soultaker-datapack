@@ -9,7 +9,7 @@ item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:17
 item replace entity @s armor.chest with golden_chestplate
 # 杀死大剑
 tag @s add me
-function pvp:game/role/nearl/kill_sword
+execute as @e[tag=nearl_sword] at @s if score @s pid = @p[tag=me] pid run function pvp:game/role/nearl/kill_sword
 tag @s remove me
 # 清除无法移动和跳跃
 effect clear @s slowness

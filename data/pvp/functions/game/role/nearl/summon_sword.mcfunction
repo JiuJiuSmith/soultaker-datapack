@@ -6,3 +6,6 @@ summon minecraft:armor_stand ^ ^ ^ {Tags:["nearl_sword","summon"],NoGravity:1b,M
 scoreboard players operation @e[tag=summon] pid = @s pid
 scoreboard players operation @e[tag=summon] tid = @s tid
 tag @e[tag=summon] remove summon
+
+# 生成耀阳粒子效果基准盔甲架
+summon minecraft:armor_stand ^ ^ ^ {Tags:["nearl_sword_particle"],NoGravity:1b,Marker:1b,Invisible:1b}

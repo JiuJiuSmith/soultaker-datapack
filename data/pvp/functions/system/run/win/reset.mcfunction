@@ -72,6 +72,7 @@ kill @e[type=armor_stand,tag=fire_ball]
 kill @e[type=arrow]
 kill @e[tag=swordkee]
 kill @e[tag=nearl_sword]
+kill @e[tag=nearl_sword_particle]
 kill @e[tag=flying_shield]
 
 #bossbar
