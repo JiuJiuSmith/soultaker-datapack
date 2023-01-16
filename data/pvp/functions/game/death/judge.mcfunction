@@ -14,6 +14,7 @@ title @p[tag=killer] title {"text":"☠","color":"red"}
 title @p[tag=killer] subtitle [{"score":{"name":"@p[tag=killer]","objective":"kill_count"},"color":"white","bold":false},{"text":" kill","bold":false}]
 
 #一血检测
+## 需要安装配套的成就包
 execute as @p[tag=killer] run function pvp:advancements/first_blood_judge
 
 #灵魂
