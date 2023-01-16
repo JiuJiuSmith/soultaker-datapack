@@ -9,6 +9,5 @@ execute as @a at @s if score @e[distance=..6, tag=nearl_sword, limit=1] tid = @s
 
 tag @a[tag=nearl_cure] add cure
 scoreboard players set @a[tag=nearl_cure] cure 20 
-tag @a[tag=cure,tag=health] remove health
 
 tag @a[tag=nearl_cure] remove nearl_cure

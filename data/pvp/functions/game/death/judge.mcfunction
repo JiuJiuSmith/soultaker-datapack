@@ -20,6 +20,9 @@ title @p[tag=killer] subtitle [{"score":{"name":"@p[tag=killer]","objective":"ki
 ##一血检测
 execute as @p[tag=killer] run function pvp:advancements/first_blood_judge
 
+## 死亡后如果是有身上有guarded的非耀骑士玩家，身上的灵魂'传承'给给予自己盾的耀骑士
+execute as @s[tag=guarded] unless score @s rid matches 9 as @a[scores={rid=9}] if score @s guarded_pid = @p[tag=death] pid run function pvp:game/role/nearl/soul_inherit
+
 ##灵魂数量变更
 scoreboard players set @s soul 0
 scoreboard players add @p[tag=killer] soul 30
@@ -39,9 +42,6 @@ execute as @e[tag=nearl_sword] if score @s pid = @p[tag=death] pid run kill @s
 execute if score @s rid matches 9 run function pvp:game/role/nearl/callback
 execute if score @s rid matches 9 run function pvp:game/choose/nearl
 tag @s[tag=guarded_plus] remove guarded_plus
-
-## 死亡后如果是有身上有guarded的非耀骑士玩家，身上的灵魂'传承'给给予自己盾的耀骑士
-execute unless score @s[tag=guarded] rid matches 9 as @a[scores={rid=9}] if score @s guarded_pid = @p[tag=death] pid run function pvp:game/role/nearl/soul_inherit
 
 ##增加重生时间
 scoreboard players set @s spawn 320
