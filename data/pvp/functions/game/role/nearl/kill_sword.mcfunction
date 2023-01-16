@@ -2,5 +2,5 @@
 
 # 将创造的大剑杀掉
 
-kill @e[tag=nearl_sword_particle,distance=0]
+kill @e[tag=nearl_sword_particle,distance=..0.01]
 kill @s
