@@ -29,6 +29,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{role:4}}}] run function pvp:game/ch
 execute if entity @s[nbt={SelectedItem:{tag:{role:5}}}] run function pvp:game/choose/wizard
 execute if entity @s[nbt={SelectedItem:{tag:{role:6}}}] run function pvp:game/choose/priest
 execute if entity @s[nbt={SelectedItem:{tag:{role:8}}}] run function pvp:game/choose/katana
+execute if entity @s[nbt={SelectedItem:{tag:{role:9}}}] run function pvp:game/choose/nearl
 
 ##自定义设置工具
 execute if entity @s[nbt={SelectedItem:{tag:{point:1}}}] run function pvp:tools/point_set

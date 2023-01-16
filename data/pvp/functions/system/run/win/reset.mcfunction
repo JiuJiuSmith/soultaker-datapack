@@ -64,11 +64,15 @@ scoreboard objectives remove unhurt
 tag @a remove notfirst
 tag @a remove max_soul
 tag @a remove guarded
+tag @a remove guarded_plus
 advancement revoke @a only pvp:first_blood
 
 #实体
 kill @e[type=armor_stand,tag=fire_ball]
 kill @e[type=arrow]
+kill @e[tag=swordkee]
+kill @e[tag=nearl_sword]
+kill @e[tag=flying_shield]
 
 #bossbar
 bossbar remove countdown
