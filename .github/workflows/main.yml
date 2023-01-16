@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: checking
-        uses: mcbeet/check-commands@v1
+        uses: mcbeet/check-commands@latest
         with:
           source: .
           minecraft: ${{matrix.minecraftes}}
