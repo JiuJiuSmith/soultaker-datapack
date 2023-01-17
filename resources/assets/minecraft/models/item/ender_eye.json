@@ -4,8 +4,6 @@
         "layer0": "item/ender_eye"
     },
 	"overrides" :[
-		{"predicate":{"custom_model_data":1},"model":"item/staff"},
-		{"predicate":{"custom_model_data":2},"model":"item/katana_sheath"},
-		{"predicate":{"custom_model_data":3},"model":"item/fireball"}
+		{"predicate":{"custom_model_data":1},"model":"item/staff"}
 	]
 }

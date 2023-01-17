@@ -3,6 +3,8 @@
 # 盾牌的生成与传递判定
 tp @s ^ ^ ^0.7
 
+particle dust_color_transition 1 0.5 0 1 0 1 1 ~ ~ ~ 0 0 0 0 10
+
 tag @s add move
 
 scoreboard players remove @s life 1

@@ -1,0 +1,9 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/swordkee"
+    },
+	"overrides" :[
+		{"predicate":{"custom_model_data":1},"model":"item/swordkee"}
+	]
+}

@@ -13,7 +13,7 @@ tag @s add guarded
 clear @s
 ##物品 WIP!
 item replace entity @s container.0 with carrot_on_a_stick{CustomModelData:17, blazing_sun:0, display:{Name:'[{"text":"耀阳", "color":"gold", "bold": true, "italic": false}]'}, AttributeModifiers:[{AttributeName:"generic.attack_damage", Operation:0, Amount:4, Slot:"mainhand", Name:"Armor", UUID:[I;2376,8811,7442,3900]}]}
-item replace entity @s container.1 with carrot_on_a_stick{CustomModelData:15, rid:9, nearl_shield:1, display:{Name:'[{"text":"神圣之盾", "color":"gold", "bold": true, "italic": false}]'}}
+item replace entity @s container.1 with carrot_on_a_stick{CustomModelData:18, rid:9, nearl_shield:1, display:{Name:'[{"text":"神圣之盾", "color":"gold", "bold": true, "italic": false}]'}}
 item replace entity @s container.3 with carrot_on_a_stick{CustomModelData:21,cage:1,display:{Name:'[{"text":"灵魂容器","color":"aqua","italic": false}]'}}
 ##护甲 WIP!
 item replace entity @s armor.head with minecraft:golden_helmet{Unbreakable:1b}

@@ -13,7 +13,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{blazing_sun:0}}}, scores={cd=0}] at
 execute if entity @s[nbt={SelectedItem:{tag:{blazing_sun:1}}}, scores={cd=0}] at @s run function pvp:game/role/nearl/sundown
 execute if entity @s[nbt={SelectedItem:{tag:{nearl_shield:1}}}] at @s run function pvp:game/role/nearl/guard
 execute if entity @s[nbt={SelectedItem:{tag:{nearl_shield:2}}}] at @s run function pvp:game/role/nearl/callback
-execute if entity @s[nbt={SelectedItem:{tag:{nearl_shield:2}}}] at @s run item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:15, rid:9, nearl_shield:1, display:{Name:'[{"text":"神圣之盾", "color":"gold", "bold": true, "italic": false}]'}}
+execute if entity @s[nbt={SelectedItem:{tag:{nearl_shield:2}}}] at @s run item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:18, rid:9, nearl_shield:1, display:{Name:'[{"text":"神圣之盾", "color":"gold", "bold": true, "italic": false}]'}}
 
 ##收集遗落的灵魂
 execute if entity @s[nbt={SelectedItem:{tag:{cage:1}}}] if entity @e[tag=point,tag=lost_soul,scores={soul_cd=0},distance=..3] run tellraw @s[tag=ingame,tag=!collect_soul,tag=!max_soul] {"text": "[游戏] 开始回收灵魂，请保持在附近","color": "yellow"}
