@@ -14,3 +14,8 @@ tag @a[tag=nearl_cure] remove nearl_cure
 
 ## 耀阳光阵粒子效果显示
 execute as @e[tag=nearl_sword_particle] at @s run function pvp:game/role/nearl/sword_particle
+
+## 护盾效果显示
+execute as @a[tag=guarded,tag=!guarded_display] at @s run function pvp:game/role/nearl/guard_display_summon
+execute as @a[tag=guarded,tag=guarded_display] run function pvp:game/role/nearl/guarded_display
+execute as @e[tag=!guarded,tag=guarded_display] run function pvp:game/role/nearl/guarded_display_remove

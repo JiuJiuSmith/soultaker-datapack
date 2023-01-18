@@ -114,7 +114,7 @@ scoreboard objectives add soul_cling dummy
 scoreboard objectives add swordkee_damage dummy
 #耀骑士
 ## 武器耀阳的状态 0: 手持 1: 插地
-scoreboard objectives add blazing_sun dummy
+scoreboard objectives add nearl_sword dummy
 scoreboard objectives add guarded_pid dummy
 scoreboard objectives add inherit_soul dummy
 

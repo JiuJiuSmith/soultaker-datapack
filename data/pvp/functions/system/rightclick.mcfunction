@@ -9,8 +9,8 @@ execute if entity @s[nbt={SelectedItem:{tag:{rid:6}}},scores={cd=0}] at @s run f
 execute if entity @s[nbt={SelectedItem:{tag:{katana:1}}},scores={cd=0}] at @s run function pvp:game/role/katana/out_sheath
 execute if entity @s[nbt={SelectedItem:{tag:{katana:2}}},scores={cd=0}] at @s run function pvp:game/role/katana/in_sheath
 # 耀骑士
-execute if entity @s[nbt={SelectedItem:{tag:{blazing_sun:0}}}, scores={cd=0}] at @s run function pvp:game/role/nearl/sunrise
-execute if entity @s[nbt={SelectedItem:{tag:{blazing_sun:1}}}, scores={cd=0}] at @s run function pvp:game/role/nearl/sundown
+execute if entity @s[nbt={SelectedItem:{tag:{nearl_sword:0}}}, scores={cd=0}] at @s run function pvp:game/role/nearl/sunrise
+execute if entity @s[nbt={SelectedItem:{tag:{nearl_sword:1}}}, scores={cd=0}] at @s run function pvp:game/role/nearl/sundown
 execute if entity @s[nbt={SelectedItem:{tag:{nearl_shield:1}}}] at @s run function pvp:game/role/nearl/guard
 execute if entity @s[nbt={SelectedItem:{tag:{nearl_shield:2}}}] at @s run function pvp:game/role/nearl/callback
 execute if entity @s[nbt={SelectedItem:{tag:{nearl_shield:2}}}] at @s run item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:18, rid:9, nearl_shield:1, display:{Name:'[{"text":"神圣之盾", "color":"gold", "bold": true, "italic": false}]'}}

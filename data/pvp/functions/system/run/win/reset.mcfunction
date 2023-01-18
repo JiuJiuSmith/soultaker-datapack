@@ -65,6 +65,7 @@ tag @a remove notfirst
 tag @a remove max_soul
 tag @a remove guarded
 tag @a remove guarded_plus
+tag @a remove guarded_display 
 advancement revoke @a only pvp:first_blood
 
 #实体
@@ -74,6 +75,7 @@ kill @e[tag=swordkee]
 kill @e[tag=nearl_sword]
 kill @e[tag=nearl_sword_particle]
 kill @e[tag=flying_shield]
+kill @e[tag=guarded_display_entity]
 
 #bossbar
 bossbar remove countdown

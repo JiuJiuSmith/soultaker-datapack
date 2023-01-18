@@ -4,9 +4,9 @@
 
 # 2秒的收起cd, 耀阳tag设为 插地：1
 scoreboard players set @s cd 40
-scoreboard players set @s blazing_sun 1
-# 替换手中的武器为 “光”  WIP!
-item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:3, blazing_sun: 1,display:{Name:'[{"text":"“光”", "color":"gold", "bold": true, "underlined": true, "italic": false}]'}}
+scoreboard players set @s nearl_sword 1
+# 替换手中的武器为 “光”
+item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:19, nearl_sword: 1,display:{Name:'[{"text":"“光”", "color":"gold", "bold": true, "italic": false}]'},Lore:['[{"text":"拔出耀阳", "color":"yellow", "italic": false}]']}
 item replace entity @s armor.chest with golden_chestplate{Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Operation:0,Amount:1.0,Slot:"chest",Name:"Armor",UUID:[I;114,514,1919,810]}]}
 # 生成插在地上的剑
 function pvp:game/role/nearl/summon_sword
