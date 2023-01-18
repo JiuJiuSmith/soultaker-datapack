@@ -18,5 +18,4 @@ execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=m
 #参见法师hit_player.mcfunction
 
 tag @s remove me
-
-kill @e[tag=move]
+tag @e[tag=move] add pass_swordkee
