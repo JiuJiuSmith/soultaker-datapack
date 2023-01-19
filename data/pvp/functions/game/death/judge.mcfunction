@@ -17,7 +17,9 @@ title @p[tag=killer] times 0 10 5
 title @p[tag=killer] title {"text":"☠","color":"red"}
 title @p[tag=killer] subtitle [{"score":{"name":"@p[tag=killer]","objective":"kill_count"},"color":"white","bold":false},{"text":" kill","bold":false}]
 
-##一血检测
+#一血检测
+## 需要安装配套的成就包
+
 execute as @p[tag=killer] run function pvp:advancements/first_blood_judge
 
 ## 死亡后如果是有身上有guarded的非耀骑士玩家，身上的灵魂'传承'给给予自己盾的耀骑士
