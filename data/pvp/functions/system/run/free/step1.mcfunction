@@ -1,8 +1,8 @@
 #by JiuJiu
 
 #进入游戏
-tp @a[team=red,tag=ingame] @e[tag=red_wait,limit=1]
-tp @a[team=blue,tag=ingame] @e[tag=blue_wait,limit=1]
+tp @a[team=red,tag=ingame] @e[tag=red_wait,scores={enable=1},limit=1]
+tp @a[team=blue,tag=ingame] @e[tag=blue_wait,scores={enable=1},limit=1]
 
 execute as @a[tag=ingame] run function pvp:game/choose/give
 tellraw @a[tag=ingame] {"text": "[游戏] 所有玩家选择角色后，游戏自动开始","color": "yellow"}

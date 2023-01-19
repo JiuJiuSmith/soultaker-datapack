@@ -4,6 +4,9 @@
 
 ##系统设置
 scoreboard objectives add rightclick minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add map_id dummy
+execute unless score #map_id map_id matches 1.. run scoreboard players set #map_id map_id 1 
+scoreboard objectives add enable dummy
 scoreboard objectives add pid dummy
 scoreboard objectives add rid dummy
 scoreboard objectives add random dummy

@@ -32,45 +32,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{role:8}}}] run function pvp:game/ch
 execute if entity @s[nbt={SelectedItem:{tag:{role:9}}}] run function pvp:game/choose/nearl
 
 ##自定义设置工具
-execute if entity @s[nbt={SelectedItem:{tag:{point:1}}}] run function pvp:tools/point_set
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:2}}}] if score @s shift_time matches 0 run kill @e[tag=point]
-execute if entity @s[nbt={SelectedItem:{tag:{point:2}}}] if score @s shift_time matches 0 run kill @e[tag=point_set]
-execute if entity @s[nbt={SelectedItem:{tag:{point:2}}}] if score @s shift_time matches 0 run tellraw @s {"text": "[设置工具] 已删除所有点位","color": "light_purple"}
-execute if entity @s[nbt={SelectedItem:{tag:{point:2}}}] if score @s shift_time matches 1.. run kill @e[tag=point,limit=1,sort=nearest]
-execute if entity @s[nbt={SelectedItem:{tag:{point:2}}}] if score @s shift_time matches 1.. run tellraw @s {"text": "[设置工具] 已删除最近的已应用点位","color": "light_purple"}
-execute if entity @s[nbt={SelectedItem:{tag:{point:2}}}] if score @s shift_time matches 1.. run scoreboard players set @s shift_time 0
-
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:4}}}] run kill @e[tag=hall,tag=point_set]
-execute if entity @s[nbt={SelectedItem:{tag:{point:4}}}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["hall","point_set","summon"],NoGravity:1b,Marker:1b,ArmorItems: [{}, {}, {}, {id: "minecraft:leather_helmet", Count: 1b, tag: {Damage: 0, display: {color: 1441536}}}]}
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:5}}}] run kill @e[tag=red_spawn,tag=point_set]
-execute if entity @s[nbt={SelectedItem:{tag:{point:5}}}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["red_spawn","point_set","summon"],NoGravity:1b,Marker:1b,ArmorItems: [{}, {}, {}, {id: "minecraft:leather_helmet", Count: 1b, tag: {Damage: 0, display: {color: 11546150}}}]}
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:6}}}] run kill @e[tag=blue_spawn,tag=point_set]
-execute if entity @s[nbt={SelectedItem:{tag:{point:6}}}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["blue_spawn","point_set","summon"],NoGravity:1b,Marker:1b,ArmorItems: [{}, {}, {}, {id: "minecraft:leather_helmet", Count: 1b, tag: {Damage: 0, display: {color: 196776}}}]}
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:7}}}] run kill @e[tag=red_wait,tag=point_set]
-execute if entity @s[nbt={SelectedItem:{tag:{point:7}}}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["red_wait","point_set","summon"],NoGravity:1b,Marker:1b,ArmorItems: [{}, {}, {}, {id: "minecraft:leather_helmet", Count: 1b, tag: {Damage: 0, display: {color: 16743426}}}]}
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:8}}}] run kill @e[tag=blue_wait,tag=point_set]
-execute if entity @s[nbt={SelectedItem:{tag:{point:8}}}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["blue_wait","point_set","summon"],NoGravity:1b,Marker:1b,ArmorItems: [{}, {}, {}, {id: "minecraft:leather_helmet", Count: 1b, tag: {Damage: 0, display: {color: 123391}}}]}
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:10}}}] run kill @e[tag=mid,tag=point_set]
-execute if entity @s[nbt={SelectedItem:{tag:{point:10}}}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["mid","point_set","summon"],NoGravity:1b,Marker:1b,ArmorItems: [{}, {}, {}, {id: "minecraft:leather_helmet", Count: 1b, tag: {Damage: 0, display: {color: 11337981}}}]}
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:11}}}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["lost_soul","point_set","summon"],NoGravity:1b,Marker:1b,ArmorItems: [{}, {}, {}, {id: "minecraft:leather_helmet", Count: 1b, tag: {Damage: 0, display: {color: 1364408}}}]}
-
-execute if entity @s[nbt={SelectedItem:{tag:{point:9}}}] run tag @s add list2
-execute if entity @s[nbt={SelectedItem:{tag:{point:15}}}] run tag @s add list1
-execute as @a[tag=list1] run function pvp:tools/give/list1
-execute as @a[tag=list2] run function pvp:tools/give/list2
-tag @a remove list1
-tag @a remove list2
-
-execute as @e[tag=summon] run tp @s ^ ^ ^ ~ ~
-tag @e[tag=summon] remove summon
+function pvp:tools/preset
 
 ##重置计分板
 scoreboard players set @s rightclick 0

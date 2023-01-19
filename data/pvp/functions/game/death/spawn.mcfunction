@@ -6,9 +6,9 @@
 scoreboard players remove @a[scores={spawn=1..}] spawn 1
 
 ##传送至出生点
-execute as @e[team=red,scores={spawn=0},type=player] run tp @s @e[tag=red_spawn,limit=1]
+execute as @e[team=red,scores={spawn=0},type=player] run tp @s @e[tag=red_spawn,scores={enable=1},limit=1]
 execute as @e[team=red,scores={spawn=0},type=player] run scoreboard players add #player redplayer 1
-execute as @e[team=blue,scores={spawn=0},type=player] run tp @s @e[tag=blue_spawn,limit=1]
+execute as @e[team=blue,scores={spawn=0},type=player] run tp @s @e[tag=blue_spawn,scores={enable=1},limit=1]
 execute as @e[team=blue,scores={spawn=0},type=player] run scoreboard players add #player blueplayer 1
 
 ##重生倒计时UI显示

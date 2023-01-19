@@ -6,7 +6,7 @@
 execute as @a[scores={rightclick=1..}] at @s run function pvp:system/rightclick
 
 ##设置工具点位高亮
-execute if entity @a[nbt={SelectedItem:{tag:{point:3}}}] run function pvp:tools/highlight
+execute if entity @a[nbt={SelectedItem:{tag:{tools:3}}}] run function pvp:tools/highlight
 
 ##不同游戏模式下游戏启动进程
 execute if score #system gamemode matches 1 if score #auto auto_step matches 1.. run function pvp:system/run/auto/loop

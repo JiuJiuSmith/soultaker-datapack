@@ -1,12 +1,12 @@
 #by JiuJiu
 
 #设置重生点
-execute as @e[tag=red_wait] at @s run spawnpoint @a[team=red] ^ ^ ^
-execute as @e[tag=blue_wait] at @s run spawnpoint @a[team=blue] ^ ^ ^
+execute as @e[tag=red_wait,scores={enable=1}] at @s run spawnpoint @a[team=red] ^ ^ ^
+execute as @e[tag=blue_wait,scores={enable=1}] at @s run spawnpoint @a[team=blue] ^ ^ ^
 
 #传送玩家
-tp @a[team=red] @e[tag=red_spawn,limit=1]
-tp @a[team=blue] @e[tag=blue_spawn,limit=1]
+tp @a[team=red] @e[tag=red_spawn,scores={enable=1},limit=1]
+tp @a[team=blue] @e[tag=blue_spawn,scores={enable=1},limit=1]
 
 #状态
 effect give @a[tag=ingame] saturation 99999 0 true
