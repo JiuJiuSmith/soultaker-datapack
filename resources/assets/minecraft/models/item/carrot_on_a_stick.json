@@ -16,6 +16,8 @@
 		{"predicate":{"custom_model_data":16},"model":"item/katana"},
 		{"predicate":{"custom_model_data":17},"model":"item/nearl_sword"},
 		{"predicate":{"custom_model_data":18},"model":"item/nearl_shield"},
+		{"predicate":{"custom_model_data":19},"model":"item/nearl_sword_back"},
+		{"predicate":{"custom_model_data":20},"model":"item/nearl_shield_back"},
 
 		{"predicate":{"custom_model_data":21},"model":"item/soul_cage"},
 
