@@ -3,14 +3,13 @@
 #应用当前预设点位
 execute if entity @s[nbt={SelectedItem:{tag:{tools:1}}}] run function pvp:tools/apply
 
-#删除所有预设点位
-execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 0 run kill @e[tag=point,limit=1,sort=nearest]
-execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 0 run tellraw @s {"text": "[设置工具] 已删除距离最近的预设点位","color": "light_purple"}
+#潜行时删除距离最近的点位(包含已应用点位)
+execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 0 run kill @e[tag=point,limit=1,sort=nearest,distance=..10]
+execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 0 run tellraw @s {"text": "[设置工具] 已删除距离最近的点位","color": "light_purple"}
 
-#潜行时删除距离最近的预设点位
-execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 1.. run kill @e[tag=point]
+#删除所有预设点位
 execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 1.. run kill @e[tag=preset]
-execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 1.. run tellraw @s {"text": "[设置工具] 已删除所有点位","color": "light_purple"}
+execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 1.. run tellraw @s {"text": "[设置工具] 已删除所有预设点位","color": "light_purple"}
 execute if entity @s[nbt={SelectedItem:{tag:{tools:2}}}] if score @s shift_time matches 1.. run scoreboard players set @s shift_time 0
 
 #预设游戏大厅

@@ -21,7 +21,3 @@ execute as @a[tag=ingame] if score @s rid matches 8 run function pvp:game/role/k
 
 ## 耀骑士
 execute as @a[tag=ingame] if score @s rid matches 9 run function pvp:game/role/nearl/loop
-##耀骑士 护盾效果显示
-execute as @a[tag=guarded,tag=!guarded_display] at @s run function pvp:game/role/nearl/guard_display_summon
-execute as @a[tag=guarded,tag=guarded_display] run function pvp:game/role/nearl/guarded_display
-execute as @e[tag=!guarded,tag=guarded_display] run function pvp:game/role/nearl/guarded_display_remove
