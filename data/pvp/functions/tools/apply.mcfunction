@@ -6,7 +6,7 @@ execute as @e[tag=red_spawn,tag=preset] at @s run summon minecraft:armor_stand ~
 execute as @e[tag=blue_spawn,tag=preset] at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["blue_spawn","point","apply"],NoGravity:1b,Marker:1b,Invisible:1b}
 execute as @e[tag=red_wait,tag=preset] at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["red_wait","point","apply"],NoGravity:1b,Marker:1b,Invisible:1b}
 execute as @e[tag=blue_wait,tag=preset] at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["blue_wait","point","apply"],NoGravity:1b,Marker:1b,Invisible:1b}
-execute as @e[tag=mid,tag=preset] at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["mid","point"],NoGravity:1b,Marker:1b,Invisible:1b}
+execute as @e[tag=mid,tag=preset] at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["mid","point","apply"],NoGravity:1b,Marker:1b,Invisible:1b}
 execute as @e[tag=lost_soul,tag=preset] at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["lost_soul","point","apply"],NoGravity:1b,Marker:1b,Invisible:1b}
 
 #完整性检查,检查通过条件:除大厅，散落的灵魂外，场景内必须存在且仅存一个点位
