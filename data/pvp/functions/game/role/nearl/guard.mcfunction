@@ -2,7 +2,7 @@
 
 # 将盾丢给队友
 
-playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 1
+playsound minecraft:item.trident.riptide_1 player @a ~ ~ ~ 1 1.3
 
 item replace entity @s weapon.mainhand with air
 

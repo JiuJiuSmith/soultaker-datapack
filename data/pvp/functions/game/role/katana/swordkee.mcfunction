@@ -1,7 +1,8 @@
 #by JiuJiu
 
 #生成剑气
-playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 1
+playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 1.1
+playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 1.5
 
 execute positioned ~ ~1.4 ~ positioned ^ ^ ^1.5 run function pvp:game/role/katana/rotation
 
