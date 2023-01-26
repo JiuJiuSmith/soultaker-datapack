@@ -1,0 +1,9 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/scute"
+    },
+	"overrides" :[
+		{"predicate":{"custom_model_data":1},"model":"item/guarded_display"}
+	]
+}

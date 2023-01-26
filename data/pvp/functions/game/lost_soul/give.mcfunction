@@ -16,5 +16,5 @@ tellraw @s [{"text":"[游戏] 回收数量为:","color":"yellow"},{"score":{"nam
 
 kill @e[tag=random]
 tag @s remove collect_soul
-scoreboard players set @e[tag=point,tag=lost_soul,distance=..3] collect_time 0
-scoreboard players set @e[tag=point,tag=lost_soul,distance=..3] soul_cd 3600
+scoreboard players set @e[tag=point,tag=lost_soul,scores={enable=1},distance=..3] collect_time 0
+scoreboard players set @e[tag=point,tag=lost_soul,scores={enable=1},distance=..3] soul_cd 3600

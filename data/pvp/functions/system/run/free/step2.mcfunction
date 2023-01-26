@@ -19,4 +19,3 @@ team join blue BlueTeam
 ##浮动胜负判定
 execute store result score #win operation if entity @a[tag=ingame]
 scoreboard players add #win operation 2
-#tellraw @a [{"text": "[游戏] 争取优先获得","color": "yellow"},{"score":{"name":"#win","objective":"operation"},"color":"red","bold":false},{"text":"分以上并领先对方","color": "yellow"},{"text":"2","color": "red"},{"text":"分来获取胜利吧!","color": "yellow"}]

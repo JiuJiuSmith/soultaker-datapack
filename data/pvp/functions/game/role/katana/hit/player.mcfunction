@@ -10,7 +10,7 @@ execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=m
 execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=me] tid run scoreboard players remove @s[tag=!me] hp 20
 execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=me] tid run scoreboard players operation @s[tag=me] hp -= @e[tag=move] swordkee_damage 
 
-particle minecraft:flame ~ ~ ~ 0 0 0 0.1 30 force @a
+particle minecraft:firework ~ ~1 ~ 0 0 0 0.15 15 force @a
 execute as @a at @s if score @s pid = @e[tag=move,limit=1] pid run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
 
 execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=me] tid unless score @s killer = @e[tag=move,limit=1] pid run scoreboard players operation @s helper = @s killer
@@ -18,5 +18,4 @@ execute as @e[tag=move,limit=1] as @a[distance=..1.5] if score @s tid = @p[tag=m
 #参见法师hit_player.mcfunction
 
 tag @s remove me
-
-kill @e[tag=move]
+tag @e[tag=move] add pass_swordkee

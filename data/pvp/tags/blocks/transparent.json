@@ -159,6 +159,11 @@
     "minecraft:brown_wall_banner",
     "minecraft:green_wall_banner",
     "minecraft:red_wall_banner",
-    "minecraft:black_wall_banner"
+    "minecraft:black_wall_banner",
+
+    "minecraft:small_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:large_amethyst_bud",
+    "minecraft:amethyst_cluster"
   ]
 }

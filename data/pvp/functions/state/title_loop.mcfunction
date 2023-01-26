@@ -1,6 +1,6 @@
 #by JiuJiu
 
-#状态栏 
+#状态栏UI显示更新
 execute as @a[tag=ingame,scores={soul=0..4}] run title @s actionbar [{"text":"\uf829\uf828生命:","color":"red","bold":true},{"score":{"name":"@s","objective":"hp"},"color":"white","bold":false},{"text":"            灵魂:","color":"aqua","bold":true},{"score":{"name":"@s","objective":"soul"},"color":"white","bold":false},{"text":"\uf80a\uf809\uf803\ue000","color":"white","bold":false}]
 execute as @a[tag=ingame,scores={soul=5..9}] run title @s actionbar [{"text":"\uf829\uf828生命:","color":"red","bold":true},{"score":{"name":"@s","objective":"hp"},"color":"white","bold":false},{"text":"            灵魂:","color":"aqua","bold":true},{"score":{"name":"@s","objective":"soul"},"color":"white","bold":false},{"text":"\uf80a\uf809\uf803\ue001","color":"white","bold":false}]
 execute as @a[tag=ingame,scores={soul=10..14}] run title @s actionbar [{"text":"\uf829\uf828生命:","color":"red","bold":true},{"score":{"name":"@s","objective":"hp"},"color":"white","bold":false},{"text":"            灵魂:","color":"aqua","bold":true},{"score":{"name":"@s","objective":"soul"},"color":"white","bold":false},{"text":"\uf80a\uf809\uf808\ue002","color":"white","bold":false}]
