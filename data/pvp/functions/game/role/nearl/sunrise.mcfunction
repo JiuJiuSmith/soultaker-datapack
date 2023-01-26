@@ -11,7 +11,7 @@ scoreboard players set @s nearl_sword 1
 
 # 替换手中的武器为 “光”
 item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:19, nearl_sword: 1,display:{Name:'[{"text":"“光”", "color":"gold", "bold": true, "italic": false}]'},Lore:['[{"text":"拔出耀阳", "color":"yellow", "italic": false}]']}
-item replace entity @s armor.chest with golden_chestplate{Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Operation:0,Amount:1.0,Slot:"chest",Name:"Armor",UUID:[I;114,514,1919,810]}]}
+item replace entity @s armor.chest with golden_chestplate{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Operation:0,Amount:5,Slot:"chest",Name:"Armor",UUID:[I;8651,1789,4989,4796]},{AttributeName:"generic.knockback_resistance",Operation:0,Amount:1.0,Slot:"chest",Name:"Armor",UUID:[I;114,514,1919,810]}]}
 
 # 生成插在地上的剑
 function pvp:game/role/nearl/summon_sword

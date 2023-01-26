@@ -14,10 +14,10 @@ item replace entity @s container.2 with minecraft:tipped_arrow{CustomModelData:2
 item replace entity @s container.3 with minecraft:tipped_arrow{CustomModelData:3,CustomPotionEffects:[{Id:18,Amplifier:0,Duration:200}],CustomPotionColor:16777215,display:{Name:'[{"text":"虚弱瓶","italic":false}]'}} 12
 item replace entity @s container.4 with carrot_on_a_stick{CustomModelData:21,cage:1,display:{Name:'[{"text":"灵魂容器","color":"aqua","italic": false}]'}}
 ##护甲
-item replace entity @s armor.head with minecraft:leather_helmet{Unbreakable:1b}
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b}
-item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1b}
+item replace entity @s armor.head with minecraft:leather_helmet{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
+item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
 
 ##文本提示
 tellraw @s [{"text": "[游戏] 你选择了成为","color": "yellow"},{"text": "弩手","color": "red"}]

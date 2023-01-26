@@ -16,10 +16,10 @@ item replace entity @s container.0 with carrot_on_a_stick{CustomModelData:17, ne
 item replace entity @s container.1 with carrot_on_a_stick{CustomModelData:18, rid:9, nearl_shield:1, display:{Name:'[{"text":"神圣之盾", "color":"gold", "bold": true, "italic": false}]'}}
 item replace entity @s container.3 with carrot_on_a_stick{CustomModelData:21,cage:1,display:{Name:'[{"text":"灵魂容器","color":"aqua","italic": false}]'}}
 ##护甲
-item replace entity @s armor.head with minecraft:golden_helmet{Unbreakable:1b}
-item replace entity @s armor.chest with minecraft:golden_chestplate{Unbreakable:1b}
-item replace entity @s armor.legs with minecraft:golden_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with minecraft:golden_boots{Unbreakable:1b}
+item replace entity @s armor.head with minecraft:golden_helmet{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
+item replace entity @s armor.chest with minecraft:golden_chestplate{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
+item replace entity @s armor.legs with minecraft:golden_leggings{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
+item replace entity @s armor.feet with minecraft:golden_boots{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1s}]}
 
 ## 文本提示
 tellraw @s [{"text": "[游戏] 你选择了成为", "color": "yellow"}, {"text": "耀骑士", "color": "red"}]
