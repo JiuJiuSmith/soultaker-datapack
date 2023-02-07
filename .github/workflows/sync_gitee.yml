@@ -13,8 +13,8 @@ jobs:
     - name: Mirror Github to Gitee
       uses: Yikun/hub-mirror-action@master
       with:
-        src: github/Yikun
-        dst: gitee/yikunkero
+        src: github/JiuJiuSmith
+        dst: gitee/JiuJiuSmith
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         debug: true
