@@ -1,0 +1,20 @@
+on:
+  push:
+  pull_request_target:
+    branches: [main]
+name: Sync To Gitee
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source codes
+      uses: actions/checkout@v1
+    - name: Mirror Github to Gitee
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/Yikun
+        dst: gitee/yikunkero
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.GITEE_TOKEN }}
+        debug: true
